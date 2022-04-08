@@ -4,12 +4,13 @@ class KthLargest:
 
     def __init__(self, k: int, nums: List[int]):
         self.k = k
-        self.sorted_nums = sorted(nums)
+        self.nums = nums
+        self.nums.sort()
 
     def add(self, val: int) -> int:
-        self.sorted_nums.append(val)
-        self.sorted_nums  = sorted(self.sorted_nums)
-        return self.sorted_nums[-self.k] 
+        self.nums.append(val)
+        self.nums.sort()
+        return self.nums[-self.k] 
         
 
 
