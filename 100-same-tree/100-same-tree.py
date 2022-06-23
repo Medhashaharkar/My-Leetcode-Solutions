@@ -13,9 +13,8 @@ class Solution:
                 return True
             if (p == None or q == None):
                 return False
-            
-            print(p,q)
-            return (p.val==q.val and isSame(p.left, q.left) and isSame(p.right, q.right))
+
+            return (p.val == q.val and isSame(p.left, q.left) and isSame(p.right, q.right))
         
         return isSame(p,q)
 
