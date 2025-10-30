@@ -5,11 +5,10 @@ class Solution:
 
         i = 0
         j = 0
-        for i in range(len(t)):
-            if j>len(s)-1:
-                break
+        while i<len(t) and j<len(s):
             if (t[i] == s[j]):
                 j+=1
+            i += 1
 
         if j == len(s):
             return True
