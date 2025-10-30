@@ -8,8 +8,6 @@ class Solution:
         for i in range(len(t)):
             if j>len(s)-1:
                 break
-            print("i", i)
-            print("j", j)
             if (t[i] == s[j]):
                 j+=1
 
