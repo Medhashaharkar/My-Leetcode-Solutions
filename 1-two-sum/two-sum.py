@@ -8,6 +8,8 @@ class Solution:
                 return [i, my_dict[target-nums[i]]]
             else:
                 my_dict[nums[i]] = i
+
+
                 
 
 
